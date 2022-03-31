@@ -1,0 +1,9 @@
+{
+  "name": "super-pasv",
+  "description": "API tests for Paysis project",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oleg Ushakov",
+  "license": "ISC"
+}
