@@ -10,7 +10,7 @@ describe('Auth', function() {
             await authHelper.login(process.env.LOGIN, process.env.PASSWORD)
         })
 
-        it('responce status code is 200', function() {
+        it('response status code is 200', function() {
             expect(authHelper.response.statusCode).to.eq(200)
         })
 
@@ -24,11 +24,11 @@ describe('Auth', function() {
             await authHelper.login('invalid', 'invalid')
         })
 
-        it('responce status code is 404', function () {
+        it('response status code is 404', function () {
            expect(authHelper.response.statusCode).to.eq(404)
         })
 
-        it('response body does not contains authorization token', function () {
+        it('response body contains error message', function () {
             expect(authHelper.response.body.message).to.eq('Wrong login or password.')
         })
     })
